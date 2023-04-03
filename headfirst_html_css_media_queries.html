@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Media Queries in Link Tags -->
+  <link rel="stylesheet" href="lounge-smartphone.css" media="screen and (max-device-width: 480px)">
+  <link rel="stylesheet" href="lounge-tablet-portrait.css" media="screen and (max-device-width:1024px) and(orientation:portrait)">
+  <link rel="stylesheet" href="lounge-tablet-landscape.css" media="screen and (max-device-width: 640px) and (orientation: landscape)">
+  <link rel="stylesheet" href="lounge-pc.css" media="screen and (max-device-width: 1280px)">
+  <link rel="stylesheet" href="lounge-tv.css" media="screen and (max-device-width: 2650px)">
+  <title>Media Queries</title>
+  <style>
+    /* Media Queries in CSS */
+    @media screen and (min-device-width: 481px) {
+      #id {
+        margin-right: 250px;
+      }
+    }
+
+    @media screen and (max-device-width: 480px) {
+      #id {
+        margin-right: 30px;
+      }
+    }
+
+    @media print {
+      body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Media Queries</h1>
+  <p>Look at the devices below. Can you design a set of media queries in links tags to target each device?</p>
+  <ul>
+    <li>Smartphone: 480 by 640 pixels</li>
+    <li>Tablet, portrait or landscape: 1,024 by 768 pixels</li>
+    <li>Desktop PC: 1,280 by 960 pixels</li>
+    <li>Internet TV: 2,650 by 1,600 pixels, landscape</li>
+  </ul>
+</body>
+</html>
